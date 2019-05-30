@@ -8,11 +8,26 @@ This application supports the [Getting Started with Node on Heroku](https://devc
 
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
 
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
+```digraph {    
+    node [shape="rectangle"]
+    
+
+    subgraph cluster_2{
+
+        label="Integrators"
+        node[style="filled" color="orange"]
+
+        h mu md in
+    }
+
+rankdir=LR;
+    h [label="Heroku"]
+    mu [label="Mulesoft"]    
+    md [label="Mobile Device"]
+    in [label="Insulin device"]
+
+  
+}
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
